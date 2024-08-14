@@ -1,0 +1,109 @@
+@font-face {
+  font-family: outfit;
+  src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: young-Serif;
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: outfit;
+}
+
+.container{
+  max-width: 900px;
+  margin-inline: auto;
+  background-color: white;
+}
+body{
+  background-color: hsl(30, 54%, 90%);
+}
+
+.container img{
+  max-width: 100%;
+}
+.container .heading h1{
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 1rem;
+}
+
+.container div:not(:first-child){
+  padding: 1.5rem;
+}
+
+ul,
+ol{
+  padding-left: 23px;
+}
+
+h2,
+h1 {
+  font-family:young-serif;
+  color: hsl(14, 45%, 36%);
+  font-weight:580;
+  letter-spacing: 0.05rem;
+}
+
+p,
+li{
+  line-height: 1.6;
+  color: hsl(30, 10%, 34%);
+}
+li{
+  margin-top: 0.5rem;
+}
+
+.prep-time article {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  /* margin-top: 1rem; */
+}
+
+.prep-time article h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+.instruction{
+  border-top: 1px solid hsl(30, 18%, 87%);
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition p{
+  margin-top: 1rem;
+}
+.nutrition ul li{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.5rem 0;
+}
+.nutrition ul li:last-child{
+  border-bottom: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width:768px) {
+  .container{
+    margin: 5rem auto 0;  
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  .container img{
+    border-radius: 1rem;
+  }
+}
